@@ -1,0 +1,128 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-jp-dynamic-subset.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+:root {
+  --bg: #121212; 
+  --fg: #DDDDDD;
+  --gray: #CCCCCC;
+  --semidarkgray: #666666;
+  --darkgray: #2E2E2E;
+  --link: #90CAF9;
+  --primary: #3F51B5;
+  --secondary: #1D1D1D;
+  --success: #8BC34A;
+  --warning: #FFEB3B;
+  --error: #FF5722;
+  --pink: #DF548F;
+}
+
+.light-mode {
+  --bg: #FFFFFF;
+  --fg: #1D1D1D;
+  --gray: #333333;
+  --semidarkgray: #777777;
+  --darkgray: #CCCCCC;
+  --link: #1976D2;
+  --secondary: #EFEFEF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Pretendard", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 700px;
+}
+
+.formatted-text {
+  color: var(--fg);
+  line-height: 1.75;
+
+  h2, h3, h4, h5, h6 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+
+    a {
+      color: var(--fg);
+    }
+  }
+
+  h2, h3, h4 {
+    border-bottom: 1px solid var(--semidarkgray);
+    padding-bottom: 0.25rem;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  ul, ol {
+    padding-left: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+  }
+
+  th, td {
+    border: 1px solid var(--darkgray);
+    padding: 0.5em;
+    text-align: left;
+  }
+
+  th {
+    background: var(--secondary);
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0.25rem 0 0.5rem 1rem;
+    color: var(--semidarkgray);
+    border-left: 2px solid var(--darkgray);
+  }
+
+  code {
+    background: var(--secondary);
+    padding: 0.2em 0.4em;
+    border-radius: 0.25rem;
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.8rem;
+  }
+
+  pre {
+    background: var(--secondary);
+    line-height: 1.25;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    white-space: pre-wrap;
+
+    code {
+      padding: 0;
+      background: transparent;
+    }
+  }
+}
