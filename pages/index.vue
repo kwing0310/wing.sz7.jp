@@ -9,6 +9,7 @@
         >
           <NuxtImg
             alt="My cute avatar"
+            width="400"
             src="/avatar-cropped.jpg"
             class="avatar-image__img"
           />
