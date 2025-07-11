@@ -3,7 +3,10 @@
     <AppThemeSwitcher />
     <section id="hello">
       <div id="avatar">
-        <NuxtLink to="otaku" class="avatar-image">
+        <NuxtLink
+          to="otaku"
+          class="avatar-image"
+        >
           <NuxtImg
             alt="My cute avatar"
             src="/avatar-cropped.jpg"
@@ -235,7 +238,7 @@ h2 {
     #avatar {
       width: 40%;
       display: flex;
-      justify-content: center; 
+      justify-content: center;
       align-items: center;
     }
 
